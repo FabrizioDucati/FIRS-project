@@ -1,0 +1,703 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025/"
+     xml:base="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-08</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/%20"/>
+        <rdfs:comment xml:lang="en">This ontology was developed by Fabrizio Ducati within the framework of the EU-funded FIRS project. It serves as the reference solution for the introductory practical workshop delivered as part of the 5th Una Quantum Conference, held at the University of Bologna from 18 to 19 December. For any questions or clarifications, please contact fabrizio.ducati@univ-amu.fr
+
+My thanks go to Giuseppe Guarino and Una Quantum for their kind invitation, to Michael De Bellis for his support and valuable advice during the ontology modelling process, and to the European Commission for the generous funding provided through the FIRS project.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://cordis.europa.eu/project/id/101106142"/>
+        <rdfs:seeAlso rdf:resource="https://firs-project.univ-amu.fr/en/home"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#Locates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#Locates">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isPartOf"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:58:01Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasCeramicClass -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasCeramicClass">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isCeramicClassOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ArtefactIdentifier"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicType"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicClass"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:58:01Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasCeramicShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasCeramicShape">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isCeramicShapeOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ArtefactIdentifier"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicClass"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicType"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicShape"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:58:01Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasCeramicType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasCeramicType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isCeramicTypeOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ArtefactIdentifier"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicClass"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicType"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:58:01Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasDiscoveryArea -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasDiscoveryArea">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isDiscoveryAreaOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ArtefactIdentifier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoveryArea"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:58:01Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasDiscoveryLayer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasDiscoveryLayer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isDiscoveryLayerOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ArtefactIdentifier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoveryLayer"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:58:01Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasDiscoverySite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasDiscoverySite">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isDiscoverySiteOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ArtefactIdentifier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoverySite"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:58:01Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasDiscoverySpace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasDiscoverySpace">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isDiscoverySpaceOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ArtefactIdentifier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoverySpace"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:58:01Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasProductionPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasProductionPlace">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isProductionPlaceOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ArtefactIdentifier"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicClass"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicType"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ProductionPlace"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T14:26:53Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasTechnology -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasTechnology">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isTechnologyOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicShape"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#Technology"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:58:01Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isCeramicClassOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isCeramicClassOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:58:01Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isCeramicShapeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isCeramicShapeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:58:01Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isCeramicTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isCeramicTypeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:58:01Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isDiscoveryAreaOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isDiscoveryAreaOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:58:01Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isDiscoveryLayerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isDiscoveryLayerOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:58:01Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isDiscoverySiteOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isDiscoverySiteOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:58:01Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isDiscoverySpaceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isDiscoverySpaceOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:58:01Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoveryPalce"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoveryPalce"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:58:01Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isProductionPlaceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isProductionPlaceOf">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T14:27:06Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isTechnologyOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#isTechnologyOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:58:01Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasExcavationYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasExcavationYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoveryLayer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T13:16:47Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasPreservedPart -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasPreservedPart">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ArtefactIdentifier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T13:16:47Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasSpecificWorkshop -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasSpecificWorkshop">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ArtefactIdentifier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T13:16:47Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ArchaeologicalClassification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ArchaeologicalClassification">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:43:24Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ArtefactIdentifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ArtefactIdentifier">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasCeramicClass"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicClass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasCeramicShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicShape"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasCeramicType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasDiscoveryArea"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoveryArea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasDiscoveryLayer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoveryLayer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasDiscoverySite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoverySite"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasDiscoverySpace"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoverySpace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasProductionPlace"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ProductionPlace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasPreservedPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasSpecificWorkshop"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:bibliographicCitation xml:lang="en">Barclay, Alistair, Knight, David, Booth, Paul, Evans, Jane, Brown, Duncan H., and Wood, Imogen, 2016. A Standard for Pottery Studies in Archaeology, London.</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="fr">Yamen Sghaïer, Michel Bonifay, Chokri Touihri, Imène Gourar. La collection de référence des céramiques puniques, romaines et médiévales de Thapsus/Ras Dimass. Institut National du Patrimoine de Tunisie, 158 p., 2023, 978-9938-9960-4-3. hal-04082349</terms:bibliographicCitation>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:43:24Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+        <rdfs:comment xml:lang="en">The unique identifier assigned to each artefact within a given project. Different marking methods may be employed across projects.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://hal.science/hal-04082349v1/file/Sghaier_Bonifay_Touihri_Gourar_2023_Coll_r%C3%A9f_Thapsus.pdf"/>
+        <rdfs:seeAlso rdf:resource="https://romanpotterystudy.org.uk/wp-content/uploads/2016/06/Standard_for_Pottery_Studies_in_Archaeology.pdf"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicClass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ArchaeologicalClassification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasCeramicShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicShape"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasCeramicType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasProductionPlace"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ProductionPlace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:bibliographicCitation xml:lang="fr">Yamen Sghaïer, Michel Bonifay, Chokri Touihri, Imène Gourar. La collection de référence des céramiques puniques, romaines et médiévales de Thapsus/Ras Dimass. Institut National du Patrimoine de Tunisie, 158 p., 2023, 978-9938-9960-4-3. hal-04082349</terms:bibliographicCitation>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:43:24Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+        <rdfs:comment xml:lang="en">A group of objects belonging to the same functinoal category that share the same fabric or fabric group, as well as comparable shaping and coating techniques. A ceramic class is typically produced within a specific region and within a broadly similar chronological range.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://hal.science/hal-04082349v1/file/Sghaier_Bonifay_Touihri_Gourar_2023_Coll_r%C3%A9f_Thapsus.pdf"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicShape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicShape">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ArchaeologicalClassification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasTechnology"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#Technology"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:43:24Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+        <rdfs:comment xml:lang="en">The specific shape or form of an object, such as a bowl, plate, or flat-bottomed amphora.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ArchaeologicalClassification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasCeramicClass"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicClass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasCeramicShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicShape"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasProductionPlace"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ProductionPlace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:bibliographicCitation xml:lang="fr">Yamen Sghaïer, Michel Bonifay, Chokri Touihri, Imène Gourar. La collection de référence des céramiques puniques, romaines et médiévales de Thapsus/Ras Dimass. Institut National du Patrimoine de Tunisie, 158 p., 2023, 978-9938-9960-4-3. hal-04082349</terms:bibliographicCitation>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:43:24Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+        <rdfs:comment xml:lang="en">A set of objects sharing similar morphological traits, often assigned to the same class and chronological range. When the morphology is indeterminate, this is explicitly noted.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://hal.science/hal-04082349v1/file/Sghaier_Bonifay_Touihri_Gourar_2023_Coll_r%C3%A9f_Thapsus.pdf"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoveryArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoveryArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoveryPalce"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:43:24Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+        <rdfs:comment xml:lang="en">When available, the area or trench in which the space and layer were excavated (e.g., Area A, Trial Trench).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoveryLayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoveryLayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoveryPalce"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#hasExcavationYear"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:43:24Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+        <rdfs:comment xml:lang="en">The archaeological layer in which an artefact was found.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoveryPalce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoveryPalce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#Location"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#Locates"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoveryPalce"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ProductionPlace"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:43:24Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoverySite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoverySite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoveryPalce"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:43:24Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+        <rdfs:comment>The site associated with the excavation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoverySpace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoverySpace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoveryPalce"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:43:24Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+        <rdfs:comment xml:lang="en">When available, the type of space in which the layer was excavated, such as a room, cesspit, or courtyard.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#Location">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:43:24Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ProductionPlace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ProductionPlace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#Location"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:43:24Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+        <rdfs:comment xml:lang="en">The broad production region or place associated with the origin of an artefact, such as Africa, the Eastern Mediterranean, or Italy. In some cases, this origin is reflected directly in the class name.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#Technology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#Technology">
+        <terms:bibliographicCitation xml:lang="en">Barclay, Alistair, Knight, David, Booth, Paul, Evans, Jane, Brown, Duncan H., and Wood, Imogen, 2016. A Standard for Pottery Studies in Archaeology, London.</terms:bibliographicCitation>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-08T11:43:24Z</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-1659-0848"/>
+        <rdfs:comment xml:lang="en">The production method or technological process employed to manufacture a specific object or class.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://romanpotterystudy.org.uk/wp-content/uploads/2016/06/Standard_for_Pottery_Studies_in_Archaeology.pdf"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ArchaeologicalClassification"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#ArtefactIdentifier"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#Location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#Technology"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicClass"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicShape"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#CeramicType"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoveryArea"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoveryLayer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoverySite"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/fabrizio/ontologies/2025/11/uq_workshop_2025#DiscoverySpace"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
